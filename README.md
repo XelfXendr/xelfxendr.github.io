@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # al-folio
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [maintainers]: https://img.shields.io/badge/maintainers-4-success.svg 'Number of maintainers'
@@ -657,3 +658,6 @@ Since then, it got a full re-write of the styles and many additional cool featur
 =======
 # xelfxendr.github.io
 >>>>>>> f427dfd (first commit)
+=======
+# xelfxendr.github.io
+>>>>>>> f427dfde826f98c2de72f8cbed8d76d5952be0f7
