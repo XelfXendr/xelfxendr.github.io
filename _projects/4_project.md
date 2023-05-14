@@ -1,80 +1,57 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
-importance: 3
-category: fun
+title: Užovka
+description: A simple imperative language interpreter written in Haskell
+img: assets/img/snake.jpg
+importance: 2
+category: work
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+As a part of the course on *Declarative Programming*, I wrote an interpreter for a simple procedural language I called *Užovka* (Czech for *grass snake*).
+Užovka is a simple imperative language with support for variables, and nested loops and conditionals. The keywords are in Czech.
+The programs are read and interpreted from text files.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+Here is an example of a program that computes the factorial numbers up to 50:
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+```python
+Nechť n je 50;
+Nechť faktorial je 1;
+Nechť i je 0;
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
-
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
+Dokud i < n
+{
+    Nechť i je i + 1; 
+    Nechť faktorial je faktorial * i;
+    Vypiš i + "! = " + faktorial;
+}
 ```
-{% endraw %}
+
+And another example for the quadratic formula:
+
+```python
+Nechť a je 10.0;
+Nechť b je 5.0;
+Nechť c je -4.0;
+
+Nechť d je ((b*b) - (4*a*c));
+
+Pokud (d < 0) {
+    Vypiš "No real roots";
+}
+Jinak {
+    Pokud d == 0 {
+        Vypiš "x = " + ((-b) / (2 * a));
+    }
+    Jinak {
+        Nechť x1 je (((-b) + odmocnina d) / (2 * a));
+        Nechť x2 je (((-b) - odmocnina d) / (2 * a));
+    
+        Vypiš "x1 = " + x1;
+        Vypiš "x2 = " + x2;
+    }
+}
+```
+
+The code for this interpreter is available on our university's [GitLab](https://gitlab.mff.cuni.cz/bronecja/nprg005-ls2122-zapoctak).
+
+

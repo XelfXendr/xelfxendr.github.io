@@ -2,96 +2,75 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Jan Bronec
     - name: Date of Birth
-      value: 14th March 1879
+      value: 18th August 2000
     - name: Languages
-      value: English, German
+      value: Czech, English
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Bachelor's Degree
+      institution: Faculty of Mathematics and Physics, Charles University, Prague, Czech Republic
+      year: 2020 - 2023
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - Computer Science / Artificial Intelligence
+        - A three-year study programme focused on computer science, programming, artificial intelligence, machine learning, and data science.
+    - title: Secondary school
+      institution: SOŠE COP, Hluboká nad Vltavou, Czech Republic
+      year: 2016 - 2020
       description:
-        - Description 1.
-        - Description 2.
+        - Computer Science
+        - Four-year study programme focused on computer science, programming, cybersecurity, computer network management, database management, hardware assembly, and repair.
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Research Intern
+      institution: DIMACS REU, Rutgers University, New Jersey, US
+      year: 2022
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - My research focused on the asymptotic improvement of a network community detection algorithm in the semi-external scenario; the scenario where the network as a whole does not fit into memory
+    - title: Software Developer / IT Technician
+      institution: Sensorex, Inc., České Budějovice, Czech Republic
+      year: 2019
       description:
-        - Description 1.
-        - Description 2.
+        - Summer job, which included Android app development, use of GoogleCloud services, CAD / 3D Modelling of parts, building tools/machines programmed with Arduino microcontrollers
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
-
-- title: Academic Interests
+- title: Coursework / Skills
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Coursework
       items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Data Structures & Algorithms
+        - Operating Systems
+        - Network Security
+        - Network Management
+        - Data Management
+        - Machine Learning
+        - Artificial Intelligence
+        - Full-stack Development
+        - Embedded
+        - Parallel Programming / Distributed Systems
+    - title: Languages
       items:
-        - Description 1.
-        - Description 2.
-
+        - Rust
+        - Python
+        - Java
+        - C++
+        - C#
+        - Haskell
+        - SQL
+        - SPARQL
+    - title: Frameworks/Technologies
+      items:
+        - Linux
+        - Git
+        - Docker
+        - Tensorflow, scikit-learn
+        - Open data
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - Rust, Linux, ML, LLMs
