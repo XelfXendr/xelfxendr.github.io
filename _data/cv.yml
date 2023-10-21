@@ -11,6 +11,12 @@
 - title: Education
   type: time_table
   contents:
+    - title: Master's Degree
+      institution: Faculty of Mathematics and Physics, Charles University, Prague, Czech Republic
+      year: 2023 - 2025
+      description:
+        - Artificial Intelligence / Machine Learning
+        - A two-year study programme focused on various aspects of artificial intelligence, mainly machine learning.
     - title: Bachelor's Degree
       institution: Faculty of Mathematics and Physics, Charles University, Prague, Czech Republic
       year: 2020 - 2023
